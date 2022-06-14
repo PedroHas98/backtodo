@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+</head>
 <body>
 	<h1>Tarefas</h1>
-        <table border="1">
-         {% for x in listaTasks %}
-          <tr>
-          <td><a href="editar/{{ x.id }}">{{ x.id }}</a></td>
-          <td>{{ x.id }}</td>
-          <td>{{ x.tarefa }}</td>
-          <td>{{ x.descricao }}</td>
-          <td>{{ x.prioridade }}</td>
-          <td>{{ x.data }}</td>
-          <td>{{ x.status }}</td>
-          <td><a href="apagar/{{ x.id }}">apagar</a></td>
-          </tr>
-          {% endfor %}
-       </table>
-	<p><a href="adicionar/">Adicionar membro</a></p>
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th> Id </th>
+                <th>Tarefa</th>
+                <th>Descrição</th>
+                <th>Prioridade</th>
+                <th>Data</th>
+                <th>Status</th>
+              </tr>
+	    </thead>
+            </body>
+              {% for x in listaTasks %}
+              <tr>
+                <td>{{ x.id }}</td>
+                <td>{{ x.tarefa }}</td>
+                <td>{{ x.descricao }}</td>
+                <td>{{ x.prioridade }}</td>
+                <td>{{ x.data }}</td>
+                <td>{{ x.status }}</td>
+                <td><a href="apagar/{{ x.id }}">Deletar</a></td>
+                <td><a href="apagar/{{ x.id }}">Editar</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+	<p><a href="adicionar/"><button type="button" class="btn btn-light">Adicionar Tarefa</button></a></p>
+         
 </body>
 </html>

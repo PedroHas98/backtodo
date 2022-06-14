@@ -1,8 +1,8 @@
 <h1>Editar Tarefa</h1>
-<form action="editartask/{{ task.id }}" method="post">
+<form action="editartarefa/{{ task.id }}" method="post">
 {% csrf_token %}
 Tarefa:<br>
-<input name="tarefa" value="{{ task.nome }}">
+<input name="tarefa" value="{{ task.tarefa }}">
 <br><br>
 Descricao:<br>
 <input name="descricao" value="{{ task.descricao }}">

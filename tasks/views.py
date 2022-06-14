@@ -42,7 +42,6 @@ def editartarefa(request, id):
   tarefa = request.POST["tarefa"]
   descricao = request.POST["descricao"]
   prioridade = request.POST["prioridade"]
-  sobrenome = request.POST['sobrenome']
   data = request.POST["data"]
   status = request.POST["status"]
   task = Tasks.objects.get(id=id)
