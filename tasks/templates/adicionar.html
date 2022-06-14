@@ -1,0 +1,10 @@
+<h1>Adicionar Tarefa</h1>
+<form action="addtarefa/" method="post">
+{% csrf_token %}
+Tarefa:<br><input name="tarefa"><br><br>
+Descricao:<br><input name="descricao"><br><br>
+Prioridade:<br><input name="prioridade"><br><br>
+Data:<br><input name="data"><br><br>
+Status:<br><input name="status"><br><br>
+<input type="submit" value="Adicionar">
+</form>

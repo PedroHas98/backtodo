@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Tarefas</h1>
+        <table border="1">
+         {% for x in listaTasks %}
+          <tr>
+          <td><a href="editar/{{ x.id }}">{{ x.id }}</a></td>
+          <td>{{ x.id }}</td>
+          <td>{{ x.tarefa }}</td>
+          <td>{{ x.descricao }}</td>
+          <td>{{ x.prioridade }}</td>
+          <td>{{ x.data }}</td>
+          <td>{{ x.status }}</td>
+          <td><a href="apagar/{{ x.id }}">apagar</a></td>
+          </tr>
+          {% endfor %}
+       </table>
+	<p><a href="adicionar/">Adicionar membro</a></p>
+</body>
+</html>
