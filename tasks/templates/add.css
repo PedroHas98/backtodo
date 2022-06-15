@@ -1,0 +1,40 @@
+.dialog-box-wrapper .dialog-box{
+    background: #fff;    
+    position: relative;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+    text-align: center;
+}
+.dialog-box-wrapper .dialog-box .close-dialog{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    color: #fff;
+    font-size: 28px;
+}
+.dialog-box-wrapper .dialog-box .dialog-header{
+    background: #2980B9;
+    padding: 46px 0px 40px 0px;
+}
+.dialog-box-wrapper .dialog-box .dialog-header i{
+    font-size: 0px;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.dialog-box-wrapper .dialog-box .dialog-header i:before{
+    font-size: 48px;
+}
+.dialog-box-wrapper .dialog-box .dialog-header h4{
+    color: #FFFFFF;
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+.dialog-box-wrapper .dialog-box .dialog-body{
+    padding: 32px;
+    padding-bottom: 65px;
+}
+.dialog-box-wrapper .dialog-box .dialog-body .p1{
+    text-align: left;
+}
